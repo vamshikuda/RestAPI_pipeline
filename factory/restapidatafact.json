@@ -1,0 +1,15 @@
+{
+	"name": "restapidatafact",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "swedencentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "bc67520a-0d3e-447b-80de-a4429e432368",
+		"tenantId": "fe919b0d-cb21-4859-bc26-2c9e631b1d72"
+	}
+}

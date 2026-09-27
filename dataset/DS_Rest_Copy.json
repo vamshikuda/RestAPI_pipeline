@@ -1,0 +1,33 @@
+{
+	"name": "DS_Rest_Copy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Rest_Source",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"BaseURL": {
+					"value": "@dataset().baseurl",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"baseurl": {
+				"type": "string"
+			},
+			"id": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"typeProperties": {
+			"relativeUrl": {
+				"value": "@dataset().id",
+				"type": "Expression"
+			}
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
